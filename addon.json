@@ -2,6 +2,6 @@
     "name": "hello",
     "type": "native",
     "index": null,
-    "runtime": "21.31.20",
+    "runtime": "1.26.47",
     "version": "1.0.0"
 }
