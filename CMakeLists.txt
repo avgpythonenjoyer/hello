@@ -2,9 +2,10 @@ cmake_minimum_required(VERSION 3.6)
 
 #Setup Mavi framework
 set(VI_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/deps/mavi CACHE STRING "Mavi directory")
-set(VI_BINDINGS ON CACHE BOOL "-")
-set(VI_BACKTRACE ON CACHE BOOL "-")
 set(VI_ALLOCATOR ON CACHE BOOL "-")
+set(VI_BINDINGS ON CACHE BOOL "-")
+set(VI_BACKTRACE OFF CACHE BOOL "-")
+set(VI_WEPOLL OFF CACHE BOOL "-")
 set(VI_FCTX OFF CACHE BOOL "-")
 set(VI_SIMD OFF CACHE BOOL "-")
 set(VI_ASSIMP OFF CACHE BOOL "-")
@@ -21,6 +22,7 @@ set(VI_SPIRV OFF CACHE BOOL "-")
 set(VI_BULLET3 OFF CACHE BOOL "-")
 set(VI_RMLUI OFF CACHE BOOL "-")
 set(VI_SHADERS OFF CACHE BOOL "-")
+include(${VI_DIRECTORY}/lib/toolchain.cmake)
 
 #Project's metadata
 project(hello)
