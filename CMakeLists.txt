@@ -21,8 +21,12 @@ set(VI_MONGOC OFF CACHE BOOL "-")
 set(VI_SPIRV OFF CACHE BOOL "-")
 set(VI_BULLET3 OFF CACHE BOOL "-")
 set(VI_RMLUI OFF CACHE BOOL "-")
+set(VI_TINYFILEDIALOGS OFF CACHE BOOL "-")
+set(VI_STB OFF CACHE BOOL "-")
+set(VI_PUGIXML OFF CACHE BOOL "-")
+set(VI_RAPIDJSON OFF CACHE BOOL "-")
 set(VI_SHADERS OFF CACHE BOOL "-")
-include(${VI_DIRECTORY}/lib/toolchain.cmake)
+include(${VI_DIRECTORY}/deps/toolchain.cmake)
 
 #Project's metadata
 project(hello)
