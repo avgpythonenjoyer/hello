@@ -1,7 +1,7 @@
 {
     "name": "hello",
     "type": "native",
-    "runtime": "1.37.88.176",
-    "version": "1.0.1",
+    "runtime": "4.2.2.14",
+    "version": "1.0.0",
     "index": null
 }
